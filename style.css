@@ -1,0 +1,111 @@
+/* Ensures that the body takes up the full viewport height */
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #f3ec78, #af4261);
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    justify-content: center; /* Horizontal centering */
+    align-items: center; /* Vertical centering */
+}
+
+.divArea {
+    max-width: 600px;
+    width: 100%; /* Ensures responsive width */
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.newDiv {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    flex-grow: 1;
+    margin-right: 10px;
+}
+
+input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%;
+}
+
+.btn {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+#root {
+    margin-top: 20px;
+}
+
+/* Styling for todo item containers */
+div[data-id] {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f9f9f9;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+div[data-id] h4 {
+    margin: 0;
+    font-size: 18px;
+    color: #333;
+    flex-grow: 1; /* Ensure title takes up available space */
+}
+
+div[data-id] .button-group {
+    display: flex;
+    gap: 10px; /* Space between edit and delete buttons */
+}
+
+div[data-id] button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+div[data-id] .edit-button {
+    background-color: #ffc107;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+div[data-id] .edit-button:hover {
+    background-color: #e0a800;
+}
+
+div[data-id] .delete-button {
+    background-color: #dc3545;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+div[data-id] .delete-button:hover {
+    background-color: #c82333;
+}
